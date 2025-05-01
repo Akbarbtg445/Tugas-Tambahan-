@@ -29,17 +29,19 @@ int main(){
 
         case 2:
         cout << "Menghitung Keliling Segitiga" << endl;
-        cout << "Masukan Sisi Ke 1 =";
+        cout << "Masukkan panjang sisi pertama: ";
         cin >> sisi1;
-        cout << "Masukan Sisi Ke 2 =";
+        cout << "Masukkan panjang sisi kedua: ";
         cin >> sisi2;
-        cout << "Masukan Sisi ke 3 =";
+        cout << "Masukkan panjang sisi ketiga: ";
         cin >> sisi3;
-        cout << "keliling segitiga=" << keliling(sisi1,sisi2,sisi3) << endl; 
+        cout << "keliling segitiga=" << keliling(sisi1,sisi2,sisi3) << endl;
         break;
 
         case 3:
-        break;
+        cout << "Program Telah berhenti" << endl;
+        return 0;
+
     }
     }while(pilihan);
 }
