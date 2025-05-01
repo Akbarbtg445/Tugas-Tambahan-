@@ -1,11 +1,14 @@
 #include <iostream>
 using namespace std;
+float luas(float a,float b){
+    return a*b/2;
+}
 float keliling(float d,float e, float f){
     return d+e+f;
 }
 
 int main(){
-    float sisi1,sisi2,sisi3;
+    float Alas,Tinggi,sisi1,sisi2,sisi3;
     int pilihan;
     do{
     cout << "======= MENU =======" << endl;
@@ -16,7 +19,12 @@ int main(){
     cin >> pilihan;  
     switch (pilihan){
         case 1:
-        cout << "Menghitung Luas Segitiga";
+        cout << "Menghitung Luas Segitiga" << endl;
+        cout << "Masukan Alas =";
+        cin >> Alas;
+        cout << "Masukan Tinggi=";
+        cin >> Tinggi;
+        cout << "Luas Segitiga =" << luas(Alas,Tinggi) << endl;
         break;
 
         case 2:
